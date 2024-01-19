@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>HTML Form Example</title>
+  </head>
+
+  <body>
+
+    <h2>Simple HTML Form</h2>
+
+    <form action="/" method="post">
+      <!-- Text Input -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+
+      <!-- Password Input -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+
+      <!-- Radio Buttons -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <br>
+
+      <!-- Checkbox -->
+      <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+      <label for="subscribe">Subscribe to newsletter</label>
+      <br>
+
+      <!-- Dropdown/Select Box -->
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+      </select>
+      <br>
+      <!-- Textarea -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      <br>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit">
+    </form>
+    <img src="../images/1 (4).jpg" height="200px" width="200px">
+
+    <h2>Template Tag Example</h2>
+
+    <!-- Define the template -->
+    <template id="my-template-navbar">
+      <nav>
+        <ul>
+          <li><a href="/ItsRujanPortfolio/htmlcss/demohtml.html">demohtml</a></li>
+          <li><a href="/ItsRujanPortfolio/htmlcss/form.html">form</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </template>
+
+    <h2>Details Element Example</h2>
+
+    <details>
+        <summary>Click to reveal more information</summary>
+        <p>This is the hidden content that becomes visible when the summary is clicked.</p>
+    </details>
+
+    <h2>Dialog Element Example</h2>
+
+    <!-- Trigger button to open the dialog -->
+    <button id="openDialog">Open Dialog</button>
+
+    <!-- The dialog element with some content -->
+    <dialog id="myDialog">
+        <p>This is the content of the dialog.</p>
+        <button id="closeDialog">Close</button>
+    </dialog>
+    <h2>Audio Element and Video element</h2>
+
+    <audio controls>
+        <source src="audio/sample.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="600">
+      <source src="video/sample.mp4" type="video/mp4">
+      Your browser does not support the video element.
+  </video>
+  </body>
+  <style>
+  nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+  }
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+</style>
+<!-- Clone and insert the template content -->
+<script>
+  // Clone the template content
+  const template = document.getElementById('my-template-navbar');
+  const clone = document.importNode(template.content, true);
+
+  // Insert the cloned content into the document
+  document.body.appendChild(clone);
+
+  const openDialogButton = document.getElementById('openDialog');
+        const myDialog = document.getElementById('myDialog');
+        const closeDialogButton = document.getElementById('closeDialog');
+
+        // Add event listeners to open and close the dialog
+        openDialogButton.addEventListener('click', () => myDialog.showModal());
+        closeDialogButton.addEventListener('click', () => myDialog.close());
+</script>
+
+
+  </html>
