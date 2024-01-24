@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcolayout</title>
+</head>
+
+<body>
+
+    <header>
+        My Website
+    </header>
+    <main>
+        <article>
+            <h1>My web page</h1>
+            <p>This is my web page. There are many like it but this one is mine.</p>
+            <p>I’m using the HyperText Markup Language (<dfn>HTML</dfn>) to give structure to this page.</p>
+            <p>For example, this text is inside a paragraph which is inside an article which is inside the main content.
+            </p>
+            <p>For the tangential information that follows, I’m using the <code>aside</code> element.</p>
+        </article>
+        <aside>
+            <h2>History</h2>
+            <p>Did you know that <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">the first web page ever
+                    made</a> is still online at its original URL?</p>
+            <p>The page was created by Tim Berners-Lee in the early 90s and it still works in a modern web browser.</p>
+        </aside>
+    </main>
+    <footer>
+        <small>I made this!</small>
+    </footer>
+
+</body>
+
+</html>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-block-start: var(--metric-box-spacing);
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+header {
+  padding: var(--metric-box-spacing);
+  background-color: hsl(140deg 70% 95%);
+  font-size: 1.4em;
+}
+
+main {
+  min-block-size: calc(100vh - 6em);
+}
+
+article {
+  background-color: hsl(60deg 70% 95%);
+}
+
+aside {
+  background-color: hsl(0deg 70% 95%);
+}
+
+article,
+aside {
+  padding: var(--metric-box-spacing);
+  margin: var(--metric-box-spacing);
+}
+
+footer {
+  padding: calc(var(--metric-box-spacing) / 2);
+  background-color: hsl(200deg 70% 95%);
+}
+
+@media (min-width: 45em) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+</style>

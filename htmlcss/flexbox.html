@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="democss.css">
+    <title>css</title>
+</head>
+<body>
+    <h1>This is Flexbox </h1>
+    <div class= "containter">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> 
+    </div>
+    
+</body>
+</html>
+
+<style>
+    .containter{
+        height:500px;
+        width:100%;
+        border: 2px solid black;
+        display: flex;
+        /* flex direction property */
+        flex-direction: row; /* default value is row */
+        /* flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse; */
+        flex-wrap: wrap; 
+        flex-wrap: nowrap;
+
+        /* specify flex row-direction and wrap property*/
+        flex-flow: row wrap; 
+
+        /* specify space between content  horizental aligment */ 
+        /* justify-content: center;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around; */
+
+        /*vertical alignment*/
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        align-items: stretch;
+
+    }
+    .item{
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        border: 4px solid blue;
+        margin: 10px;
+        padding: 5px;
+    }
+    #item-2{
+        /* highter the order later is show up in the container */
+        /* order: 7; */
+        flex-grow: 6;
+        flex-shrink: 3;
+        flex-basis: 120px;
+        align-self: end;
+    }
+    #item-1{
+        /* order: 0; */
+        flex-grow: 3;
+        align-self: center;
+    }
+    
