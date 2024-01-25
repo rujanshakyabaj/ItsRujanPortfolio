@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@750&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Inter', sans-serif;
     color:  #333333;
     
     
@@ -12,18 +11,22 @@ body {
     background-color: #f5f6fa;
     padding: 0;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 5rem;
     background-color: #FFFFFF;
     border-bottom: 1px solid #858A8F;
+    padding: rem 1rem 0rem 1rem;
+
 
 }
 
-nav .menu-toggle {
+/* nav .menu-toggle {
     cursor: pointer;
     display: none;
     flex-direction: column;
@@ -38,13 +41,13 @@ nav .menu-toggle span {
     width: 100%;
     display: block;
 
-}
+} */
 .sidebar{
     display: none;
 }
 
 .logo {
-    margin-left: 5rem;
+    margin-left: 0rem;
     display: flex;
     align-items: center;
 
@@ -57,8 +60,10 @@ nav .menu-toggle span {
 
 .navbar-link ul {
     display: flex;
-    gap: 3rem;
     list-style: none;
+    gap:2rem;
+
+    
 
 }
 
@@ -66,12 +71,14 @@ nav .menu-toggle span {
     text-decoration: none;
     color: #858A8F;
     font-size: large;
-    font-weight: bolder;
+    padding: .2rem;
+    font-weight: bold;
+
 }
 
-.navbar-button {
+/* .navbar-button {
     width: 20%;
-}
+} */
 
 .navbar-button button {
     background-color: #0176FF;
@@ -79,7 +86,8 @@ nav .menu-toggle span {
     color: #FFFFFF;
     font-weight: bold;
     font-size: large;
-    padding: .5rem;
+    padding: 1rem;
+    border: none;
 
 }
 
@@ -103,6 +111,7 @@ nav .menu-toggle span {
     color: #858A8F;
     font-size: 1rem;
     text-wrap: wrap;
+    
 
 }
 
@@ -121,9 +130,12 @@ nav .menu-toggle span {
     display: flex;
     background-color: #f5f6fa;
     padding: 2rem 5rem 5rem 5rem;
-    gap: 5rem;
+    gap: 2rem;
     margin: 5rem 5rem 0rem 5rem;
 
+}
+.information h2{
+    font-size: 2rem;
 }
 
 .information p {
@@ -140,22 +152,28 @@ nav .menu-toggle span {
     padding: 2rem;
     gap: 2rem;
     align-items: start;
-    border-radius: 4px;
-    box-shadow: 1px 2px #888888;
+    border-radius: 10px;
     margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
 }
 
 .message {
     display: flex;
     gap: 2rem;
+    font-weight: bold;
 }
-
+.message  p{
+    color: #397EFF;
+    font-size: large;
+    
+}
 .contact-us {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     text-align: center;
-    width: 40%;
+    width: 60%;
     margin: auto;
     background-color: #f5f6fa;
     margin-top: 5rem;
@@ -176,34 +194,51 @@ nav .menu-toggle span {
 }
 
 .contact-us .form-input input {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    padding: 16px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     width: 100%;
     outline: none;
 }
 
 .contact-us .form-input textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    padding: 18px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     width: 100%;
     outline: none;
+    font-weight: 400;
 }
+
+
 
 .contact-us .form-check {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+
+}
+.form-check .column input{
+    cursor: pointer;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid ;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.form-check label{
+    color: #858A8F;
+    font-weight: 500;
 }
 
 .contact-us .form-check .btn {
     padding: 10px;
     background-color: #0176FF;
-    margin-right: 5rem;
     border-radius: 5px;
     color: #FFFFFF;
     width: 30%;
@@ -215,10 +250,9 @@ nav .menu-toggle span {
 footer {
     display: flex;
     flex-direction: row;
-    gap: 8rem;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0rem;
     margin-top: 5rem;
-    padding: 4rem;
     background-color: #FFFFFf;
 }
 
