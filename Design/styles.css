@@ -209,7 +209,7 @@ nav .menu-toggle span {
     border-radius: 4px;
     width: 100%;
     outline: none;
-    font-weight: 400;
+
 }
 
 
@@ -221,9 +221,12 @@ nav .menu-toggle span {
 
 
 }
+.form-check .column{
+    display: flex;
+    align-items: center;
+}
 .form-check .column input{
-    cursor: pointer;
-  position: relative;
+cursor: pointer;
   width: 20px;
   height: 20px;
   border: 2px solid ;
@@ -251,7 +254,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 0rem;
+    padding: 3rem;
     margin-top: 5rem;
     background-color: #FFFFFf;
 }

@@ -75,7 +75,7 @@
         border-radius: 4px;
         margin: 4rem 0rem 0rem 0rem;
         padding: 2rem;
-        box-shadow: 1px 2px #888888;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         width: 60%;
     }
     .contact-us h1{
@@ -149,7 +149,6 @@
         border-radius: 4px;
         width: 100%;
         outline: none;
-        font-weight: 400;
     }
     
     .form-check {
@@ -180,6 +179,7 @@
         width: 30%;
         font-weight: bold;
         font-size: small;
+        border: none;
     
     }
     footer{
