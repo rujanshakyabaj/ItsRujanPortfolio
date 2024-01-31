@@ -1,67 +1,210 @@
-body {
-  font-family: 'Arial', sans-serif;
+* {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+:root {
+  --red-color: #BE273A;
+  --background-color: #050505;
+  --white-color: #FFFFFF;
+  --blue-color: #373a3b;
+  --green-color: #24E6A4;
+  --yellow-color: #FDBA3A;
+  --text-color: white;
+  --darkred-color: #941E2D;
+  --text-black:#020202;
+
+
 }
 
-.flex-container {
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+nav {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.project {
-  border: 1px solid #ddd;
+  height: 100px;
+  background-color: var(--background-color);
+  color: var(--white-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
   padding: 20px;
-  margin: 20px;
-  width: 300px;
-  box-sizing: border-box;
-  text-align: center;
+
 }
 
-.project img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px; /* Add rounded corners for images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+nav ul {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+
+
 }
 
-.project h3 {
-  margin-top: 15px;
+nav ul li {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: color 0.5s ease-out;
+
 }
 
-.project p {
-  color: #555;
-}
+/* nav ul li:hover{
+  background-color: var(--darkred-color);
+} */
 
-.project a {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #333;
-  color: #fff;
+nav ul li a {
+  list-style: none;
+  margin: 0 23px;
   text-decoration: none;
-  border-radius: 4px;
-  margin-top: 10px;
+  color: var(--white-color);
+
 }
 
-.project a:hover {
-  background-color: #555;
+nav ul li :hover {
+  color: var(--red-color);
+  transition-delay: 0.5;
+
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
+nav .left {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.image-wrapper{
+  height: 24px !important;
+  width: 24px !important;
+}
+
+
+.hstack{
   width: 100%;
-  bottom: 0;
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  justify-items: center;
 }
+
+.firstSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: calc(100vh - 140px);
+}
+
+
+.firstSection .name {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.leftSection {
+  font-size: 3rem;
+
+}
+.rightSection{
+  height: 100%;
+}
+.rightSection img {
+  height: 100%;
+}
+
+.leftSection span {
+  color: var(--red-color);
+}
+
+.projectSection{
+  background-color: white;
+  color:var(--background-color);
+  width: 100%;
+}
+
+#project-header h1 {
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+  padding: 50px;
+  font-size: 3rem;
+}
+.projectSection .project-items{
+  display: flex;
+  justify-content: center;
+  gap: 2rem
+}
+.projectSection .project-card img{ 
+  width: 100%;
+  height: 300px;
+}
+
+.projectSection .project-card{
+  height:500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3); /* Adjust the shadow as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 2rem;
+  margin: 2rem 0rem;
+  width: 30%;
+
+}
+.project-card p{
+  text-wrap: wrap;
+}
+.project-card a{
+  text-decoration: none;
+}
+.project-card-button-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px;
+  border: 1px solid var(--red-color);
+  border-radius: 4px;
+  padding: 0.5rem 2rem ;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  transition: 0.2s linear ;
+}
+
+.project-card-button-1:hover {
+  background-color: var(--white-color);
+  color: var(--red-color);
+  cursor: pointer;
+}
+.project-card-button-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px;
+  border: 1px solid var(--red-color);
+  border-radius: 4px;
+  padding: 0.5rem 2rem ;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  transition: 0.2s linear ;
+}
+
+.project-card-button-2:hover {
+  background-color: var(--white-color);
+  color: var(--red-color);
+  cursor: pointer;
+}
+
 
