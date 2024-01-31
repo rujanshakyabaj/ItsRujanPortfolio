@@ -22,26 +22,20 @@ nav {
     background-color: #FFFFFF;
     border-bottom: 1px solid #858A8F;
     padding: rem 1rem 0rem 1rem;
+    text-wrap: nowrap;
+    
 
 
 }
-
-/* nav .menu-toggle {
-    cursor: pointer;
+nav .logo span {
+    width: 5%  ;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
+}
+nav .logo span img{
+    width: 100%  ;
 }
 
-nav .menu-toggle span {
-    background-color: black;
-    height: 4px;
-    width: 100%;
-    display: block;
 
-} */
 .sidebar{
     display: none;
 }
@@ -88,6 +82,7 @@ nav .menu-toggle span {
     font-size: large;
     padding: 1rem;
     border: none;
+    margin: 0rem 1rem 0rem 1rem;
 
 }
 

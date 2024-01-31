@@ -1,50 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Workbench&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Your Portfolio</title>
+    <title>Rujan Shakya - QA Portfolio </title>
 </head>
+
 <body>
-
     <header>
-        <h1>Rujan Shakya</h1>
-        <p>Quality Assurance </p>
-        <h2>Portfolio Projects</h2>
+        <nav>
+            <div class="left">
 
+                <img src="./images/logo.png">
+
+                <div class="title">
+                    Rujan's Portfolio
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#project-header">My Projects</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <section id="projects" class="flex-container">
 
+    <section class="firstSection">
+        <div class="leftSection">Hi, My name is
+            <div><span class="name">Rujan Shakya</span></div>
+            <div>I am a passionate</div>
+            <span id="element"></span>
 
-        <div class="project">
-            <img src="./images/1 (2).jpg" alt="Project 1">
-            <h3>AddressBookShellScript</h3>
-            <p>Creating an Addres book using bash scripting</p>Description of Project 1.</p>
-            <a href="./AddressBookShellScript/AddressBook.sh">View details</a>
         </div>
-
-        <div class="project">
-            <img src="./images/1 (2).jpg" alt="Project 2">
-            <h3>UI Design Assigment </h3>
-            <p>Designing an Assigment using html and css</p>
-            <a href="./Design/index.html">View details</a>
+        <div class="rightSection">
+            <img src="./images/Rujan Shakya-PhotoRoom.png-PhotoRoom.png">
         </div>
-
-        <!-- Add more projects as needed -->
-        <!-- <div class="project">
-            <img src="project3.jpg" alt="Project 3">
-            <h3>Project 3</h3>
-            <p>Description of Project 3.</p>
-            <a href="project3.html">View details</a>
-        </div> -->
-
     </section>
 
-    <footer>
-        <p>Contact: your.email@example.com</p>
-    </footer>
 
+    <section class="projectSection">
+        <div id="project-header">
+            <h1>My Projects</h1>
+        </div>
+        <div class="project-items">
+            <div class="project-card">
+                <div class="card-body">
+                    <img src="./images/address.png">
+                    <h2>Address book</h2>
+                    <h3>Description </h3>
+                    <p>Basic Crud Operation on Address Contact using ShellScripting.</p>
+                </div>
+                <div class="hstack card-button" >
+                    <a class="project-card-button-1" href="https://git.bajratechnologies.com/rujanshakya/addressbook" target="_blank">
+                        <img src="./images/gitlab-svgrepo-com.svg" alt="gitlab image" class="image-wrapper">
+                      GitLabs 
+                    </a>
+                    <a class="project-card-button-2" href="https://git.bajratechnologies.com/rujanshakya/addressbook/-/blob/main/AddressBook.sh?ref_type=heads">
+                        <img src="./images/link-svgrepo-com.svg" alt="project link" class="image-wrapper">
+
+                        Visit Website</a>
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-body">
+                    <img src="./images/UiScreen.png">
+                    <h2>UI Design</h2>
+                    <h3>Description </h3>
+                    <p>Desgin a webpage using html css from a figma design.</p>
+                </div>
+                <div class="hstack card-button">
+                    <a class="project-card-button-1" href="https://git.bajratechnologies.com/rujanshakya/htmlcssuidesign" target="_blank">
+                        <img src="./images/gitlab-svgrepo-com.svg" alt="gitlab image" class="image-wrapper">
+                        GitLabs
+                    </a>
+                    <a class="project-card-button-2" href="./Design/index.html" target="_blank">
+                        <img src="./images/link-svgrepo-com.svg" alt="gitlab image" class="image-wrapper">
+
+                        Visit Website</a>
+                </div>
+            </div>
+
+            <!-- <div class="project-card">
+                <div class="card-body">
+                    <img src="./images/address.png">
+                    <h2>Address book</h2>
+                    <h3>Description </h3>
+                    <p>Short description on the topic about addressbook</p>
+                </div>
+                <div class="hstack card-button">
+                    <button class="project-card-button-1">
+                        <img src="./images/gitlab-svgrepo-com.svg" alt="gitlab image" class="image-wrapper">
+                        GitLabs
+                    </button>
+                    <button class="project-card-button-2">
+                        <img src="./images/link-svgrepo-com.svg" alt="gitlab image" class="image-wrapper">
+
+                        Visit Website</button>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <script src="./javascript/typed.js"></script>
+    <script src="./javascript/script.js"></script>
 </body>
+
 </html>
