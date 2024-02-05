@@ -23,20 +23,8 @@ nav {
     border-bottom: 1px solid #858A8F;
     padding: rem 1rem 0rem 1rem;
     text-wrap: nowrap;
-    
-
-
 }
-nav .logo span {
-    width: 5%  ;
-    display: none;
-}
-nav .logo span img{
-    width: 100%  ;
-}
-
-
-.sidebar{
+.hide-div{
     display: none;
 }
 
@@ -70,9 +58,7 @@ nav .logo span img{
 
 }
 
-/* .navbar-button {
-    width: 20%;
-} */
+
 
 .navbar-button button {
     background-color: #0176FF;
