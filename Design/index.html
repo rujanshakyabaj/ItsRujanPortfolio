@@ -14,17 +14,13 @@
     <header>
 
         <nav class="navbar">
-            <div class="hamburger hide-div">
-                <button onclick="toggleMenu()">
-                    <img src="./images/burger-menu-svgrepo-com.svg" alt="">
-                </button>
-            </div>
+            
             <div class="logo">
                 <img src="./images/logo1.svg">
                 <!-- <h1>Logo</h1>  -->
             </div>
             <div class="navbar-link">
-                <ul>
+                <ul class="navul">
                     <li><a href="/">Home <img src="./images/dropdown.svg" alt=""></a> </li>
 
                     <li><a href="/">Pages <img src="./images/dropdown.svg" alt=""></a> </li>
@@ -36,12 +32,17 @@
 
                     <li><a href="/">Portfolio <img src="./images/dropdown.svg" alt=""></a> </li>
 
-                    <!-- <li id="menu" style="display: none;">Menu</li> -->
 
                 </ul>
             </div>
             <div class="navbar-button">
                 <button>Get Started</button>
+            </div>
+
+            <div class="hamburger">
+                <button onclick="toggleMenu()">
+                    <img src="./images/burger-menu-svgrepo-com.svg" alt="">
+                </button>
             </div>
 
         </nav>
@@ -156,8 +157,13 @@
 </body>
 <script>
     function toggleMenu() {
-        var navList = document.querySelector('.navbar-link');
-        navList.classList.toggle('show');
+        var navList = document.getElementsByClassName('navbar-link');
+        var nav = document.getElementsByClassName('navbar');
+        var navul=document.getElementsByClassName('navul');
+        navul[0].classList.toggle('navuishow');
+        nav[0].classList.toggle('navheight');
+       
+
     }
 </script>
 
