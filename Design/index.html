@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <title>UI Design</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            
+            <div class="logo">
+                <img src="./images/logo1.svg">
+                <!-- <h1>Logo</h1>  -->
+            </div>
+            <div class="navbar-link">
+                <ul class="navul">
+                    <li><a href="/">Home <img src="./images/dropdown.svg" alt=""></a> </li>
+
+                    <li><a href="/">Pages <img src="./images/dropdown.svg" alt=""></a> </li>
+
+
+                    <li><a href="/">Blog <img src="./images/dropdown.svg" alt=""></a></li>
+
+
+
+                    <li><a href="/">Portfolio <img src="./images/dropdown.svg" alt=""></a> </li>
+
+
+                </ul>
+            </div>
+            <div class="navbar-button">
+                <button>Get Started</button>
+            </div>
+
+            <div class="hamburger">
+                <button onclick="toggleMenu()">
+                    <img src="./images/burger-menu-svgrepo-com.svg" alt="">
+                </button>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="cover">
+            <h1> We're here to help</h1>
+            <p>Contact us if you have any questions about our company or products. We will try to provide an answer
+                within a few days.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.339036278445!2d85.32280687609288!3d27.706816525513624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb191b1a4f7101%3A0x6a9c389614099367!2sBajra%20Technologies!5e0!3m2!1sen!2snp!4v1705990188477!5m2!1sen!2snp"
+                width="80%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="information">
+            <div class="feature1">
+                <img src="./images/email.svg" height="50px" width="50px">
+                <h2>Email Us</h2>
+                <p>Ask us a question by email and we will respond within a few days.</p>
+                <span>
+                    <div class="message">
+                        <p>Leave a message</p> <img src="./images/arrow.svg">
+                    </div>
+                </span>
+            </div>
+            <div class="feature1">
+                <img src="./images/drop_in.svg" height="50px" width="50px">
+                <h2>Drop in us</h2>
+                <p>Ask us a question by email and we will respond within a few days.</p>
+                <span>
+                    <div class="message">
+                        <p>Get directions</p> <img src="./images/arrow.svg">
+                    </div>
+                </span>
+            </div>
+            <div class="feature1">
+                <img src="./images/call.svg" height="50px" width="50px">
+                <h2>Call any time</h2>
+                <p>Call us if your question requires an immediate response.</p>
+                <span>
+                    <div class="message">
+                        <p>+1 800 778 884</p> <img src="./images/arrow.svg">
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <form class="contact-us" action="post">
+            <h1>Leave a message </h1>
+            <p>Contact us if you have any questions about our company or products. We will try to provide an answer
+                within a few days.</p>
+            <div class="form-input">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="text" id="email" placeholder="Email Address">
+            </div>
+            <div class="form-input">
+                <input type="text" id="company_name" placeholder="Company Name">
+                <input type="text" id="contact_number" placeholder="Contact Number">
+            </div>
+            <div class="form-input">
+                <textarea id="myTextarea" placeholder="How can we help?" rows="8" cols="5"></textarea>
+            </div>
+            <div class="form-check">
+                <div class="column">
+                    <input type="checkbox"> &nbsp;
+                    <label> I agree to the Terms & Condition</label>
+                </div>
+                <input type="submit" class="btn" value="Submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="flogo">
+            <img src="./images/logo2(1).svg">
+            <p>Move - Multipurpose Design Template will help you develop your website design.</p>
+            <div class="image-links">
+                <img src="./images/social(1).svg">
+            </div>
+            <div class="copyright">
+                <p> © 2019-2020 Wave Multipurpose Design Template.</p>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h2>Home</h2>
+            <p>Desktop App</p>
+            <p>Mobile App</p>
+            <p>SaaS</p>
+            <p>Event</p>
+            <p>Software</p>
+        </div>
+        <div class="footer-item">
+            <h2>Pages</h2>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Case Studies</p>
+            <p>Pricing</p>
+        </div>
+        <div class="footer-item">
+            <h2>Blog</h2>
+            <p>Blog Listing</p>
+            <p>Blog Article</p>
+            <p>Newsroom</p>
+        </div>
+        <div class="footer-item">
+            <h2>Portfolio</h2>
+            <p>Portfolio</p>
+            <p>Single Case</p>
+        </div>
+
+    </footer>
+</body>
+<script>
+    function toggleMenu() {
+        var navList = document.getElementsByClassName('navbar-link');
+        var nav = document.getElementsByClassName('navbar');
+        var navul=document.getElementsByClassName('navul');
+        navul[0].classList.toggle('navuishow');
+        nav[0].classList.toggle('navheight');
+       
+
+    }
+</script>
+
+</html>

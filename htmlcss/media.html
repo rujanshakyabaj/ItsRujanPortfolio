@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+<body>
+    <h1>Combining media queries</h1>
+<p>You can use lots of different CSS units in your media queries. If your content is mostly image-based, pixels might make the most sense. If your content is mostly text-based, it probably makes more sense to use a unit that’s based on text size, like `rem` or `em`</p>
+<p>You can also combine media queries to apply more than one condition. Use the word `and` to combine your media queries.</p>
+<p>In this example, the background color will change but only when the viewport width is between <code>50em</code> and <code>60em</code>.</p>
+</body>
+</html>
+
+<style>
+    body {
+  background-color: white;
+  color: black;
+}
+
+code {
+  color: dark;
+}
+@media (min-width: 50em) and (max-width: 60em) {
+  body {
+    background-color: black;
+  color: white;
+  }
+}
+</style>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Css</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+          <article class="flow">
+            
+            <ul>
+              <li>oat milk</li>
+              <li>rhubarb</li>
+              <li>cereal</li>
+              <li>pie crust</li>
+            </ul>
+      
+          </article>
+        </div>
+      </main>
+
+      <div class="container">
+        <div class="square has-transition">
+          <span>Hover!</span>
+        </div>
+        <div>
+          <input type="checkbox" id="has-transition" checked>
+          <label for="has-transition">Transition enabled?</label>
+        </div>
+      </div>
+
+      <div class="square ttf-linear" tabindex="0">linear</div>
+      <div class="square ttf-ease" tabindex="0">ease</div>
+      <div class="square ttf-ease-in" tabindex="0">ease-in</div>
+      <div class="square ttf-ease-out" tabindex="0">ease-out</div>
+      <div class="square ttf-ease-in-out" tabindex="0">ease-in-out</div>
+      <div class="square ttf-steps" tabindex="0">steps</div>
+      <div class="square ttf-cubic" tabindex="0">cubic</div>
+</body>
+</html>
+
+<style>
+    ul {
+  list-style-type: "🛒";
+  
+
+}
+
+li {
+  padding-left: .8em;
+}
+.square {
+  width: 150px;
+  max-height: 100px;
+  background-color: lightcoral;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 4px;
+
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+.square.ttf-linear {
+  transition-timing-function: linear;
+}
+
+.square.ttf-ease {
+  transition-timing-function: ease;
+}
+
+.square.ttf-ease-in {
+  transition-timing-function: ease-in;
+}
+
+.square.ttf-ease-out {
+  transition-timing-function: ease-out;
+}
+
+.square.ttf-ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.square.ttf-steps {
+  transition-timing-function: steps(3);
+}
+
+.square.ttf-cubic {
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.square:is(:hover, :focus) {
+  width: 50%;
+}
+
+/* Decorative styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: turquoise;
+  border-radius: 8px;
+  margin-bottom: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:hover {
+  transform: scale(1.4);
+}
+
+.square.has-transition {
+  transition: transform 150ms ease-in-out;
+}
+
+.square span {
+  font-size: 1.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Decorative styles */
+body {
+  display: grid;
+  place-items: center;
+}
+
+
+</style>
+
+<script>
+    const checkbox = document.querySelector("input");
+const button = document.querySelector("button");
+const square = document.querySelector(".square");
+
+checkbox.addEventListener("change", ({ target }) => {
+  if (checkbox.checked) {
+    square.classList.add("has-transition");
+  } else {
+    square.classList.remove("has-transition");
+  }
+});
+
+</script>
